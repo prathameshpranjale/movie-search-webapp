@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+
+body{
+    background-color: #0e1116;
+    font-family: sans-serif;
+}
+
+h3{
+    color: aliceblue;
+}
+
+.topnav{
+    overflow: hidden;
+    /* color to change */
+    background-color: #0e0e0e;
+    padding: 10px;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.topnav .search-container{
+    float: right;
+    padding : 15px;
+    
+}
+
+form{
+    background-color: #151e1e;
+    width: 300px;
+    height: 43px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    all:unset;
+    font: 15px system-ui;
+    color:#fff;
+    height: 100%;
+    width: 100%;
+    /* padding-left: 10px; */
+    padding: 6px 9px;
+    
+}
+ 
+#section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.coloumn{
+    flex: 1 1 20%;
+    /* max-: 25%; */
+    padding: 10px 40px;
+}
+
+
+
+.card {
+    border-radius: 20px;
+    padding: 15px 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    box-shadow: 0 5px 10px rgba(255, 253, 253, 0.1);
+    height: 100%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 253, 253, 0.1);
+}
+
+
+
+.thumbnail {
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+#title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    /* this we can use for transisition in text  */
+    /* -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s; */
+    transition: color 0.3s;
+}
+
+.card:hover #title {
+    color: rgb(230, 122, 122);
+}
+
+#rating{
+    color: yellow;
+}
+
+/* Responsive Layout */
+@media (max-width: 1200px) {
+    .column {
+        flex: 1 1 25%;
+        max-width: 25%;
+    }
+}
+
+@media (max-width: 900px) {
+    .column {
+        flex: 1 1 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 1 1 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    .column {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
